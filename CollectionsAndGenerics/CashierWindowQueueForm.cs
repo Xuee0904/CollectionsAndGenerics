@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,5 +27,20 @@ namespace CollectionsAndGenerics
         {
             this.BackColor = ColorTranslator.FromHtml("#F3F3F3");
         }
+
+        private void RefreshButton_Click(object sender, EventArgs e)
+        {
+            DisplayCashierQueue(CashierClass.CashierQueue);
+        }
+
+        public void DisplayCashierQueue(IEnumerable CashierList)
+        {
+            QueueList.Items.Clear();
+            foreach (Object obj in CashierList)
+            {
+                QueueList.Items.Add(obj.ToString());
+            }
+        }
+
     }
 }
