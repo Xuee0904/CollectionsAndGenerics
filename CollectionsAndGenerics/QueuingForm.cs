@@ -15,6 +15,17 @@ namespace CollectionsAndGenerics
         public QueuingForm()
         {
             InitializeComponent();
+
+            GetNumberButton.BackColor = ColorTranslator.FromHtml("#3A5A40");
+            GetNumberButton.ForeColor = ColorTranslator.FromHtml("#DFE6DA");
+
+            label1.ForeColor = ColorTranslator.FromHtml("#000907");
+            QueueNumberLabel.ForeColor = ColorTranslator.FromHtml("#222021");
+        }
+
+        private void QueuingForm_Load(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#F3F3F3");
         }
     }
 }
