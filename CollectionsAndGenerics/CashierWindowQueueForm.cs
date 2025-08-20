@@ -16,6 +16,7 @@ namespace CollectionsAndGenerics
         public CashierWindowQueueForm()
         {
             InitializeComponent();
+            AutoRefresh();
 
             RefreshButton.BackColor = ColorTranslator.FromHtml("#D9DDDC");
             RefreshButton.ForeColor = ColorTranslator.FromHtml("#222021");
@@ -42,5 +43,21 @@ namespace CollectionsAndGenerics
             }
         }
 
+        private void AutoRefresh()
+        {
+            Timer timer = new Timer();
+            timer.Interval = (1 * 1000);
+            timer.Tick += new EventHandler(timer1_Tick);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DisplayCashierQueue(CashierClass.CashierQueue);
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            CashierClass.CashierQueue.Dequeue();
+        }
     }
 }

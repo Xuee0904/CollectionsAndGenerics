@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.RefreshButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.QueueList = new System.Windows.Forms.ListView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // RefreshButton
@@ -57,6 +59,7 @@
             this.NextButton.TabIndex = 2;
             this.NextButton.Text = "Next >";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // QueueList
             // 
@@ -67,6 +70,10 @@
             this.QueueList.Size = new System.Drawing.Size(387, 272);
             this.QueueList.TabIndex = 3;
             this.QueueList.UseCompatibleStateImageBehavior = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // CashierWindowQueueForm
             // 
@@ -87,5 +94,6 @@
         private System.Windows.Forms.Button RefreshButton;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.ListView QueueList;
+        public System.Windows.Forms.Timer timer1;
     }
 }
