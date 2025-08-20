@@ -27,5 +27,13 @@ namespace CollectionsAndGenerics
         {
             this.BackColor = ColorTranslator.FromHtml("#F3F3F3");
         }
+
+        private void GetNumberButton_Click(object sender, EventArgs e)
+        { 
+            this.Hide();
+            
+            CashierWindowQueueForm hi = new CashierWindowQueueForm();
+            hi.Show();
+        }
     }
 }

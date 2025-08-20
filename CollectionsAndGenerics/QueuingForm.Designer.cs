@@ -67,6 +67,7 @@
             this.GetNumberButton.TabIndex = 2;
             this.GetNumberButton.Text = "Get number";
             this.GetNumberButton.UseVisualStyleBackColor = true;
+            this.GetNumberButton.Click += new System.EventHandler(this.GetNumberButton_Click);
             // 
             // QueuingForm
             // 

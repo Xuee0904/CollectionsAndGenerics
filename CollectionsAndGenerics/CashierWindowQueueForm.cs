@@ -16,8 +16,8 @@ namespace CollectionsAndGenerics
         {
             InitializeComponent();
 
-            RefreshButton.BackColor = ColorTranslator.FromHtml("#999DA0");
-            RefreshButton.BackColor = ColorTranslator.FromHtml("#222021");
+            RefreshButton.BackColor = ColorTranslator.FromHtml("#D9DDDC");
+            RefreshButton.ForeColor = ColorTranslator.FromHtml("#222021");
             NextButton.BackColor = ColorTranslator.FromHtml("#3A5A40");
             NextButton.ForeColor = ColorTranslator.FromHtml("#DFE6DA");
         }
