@@ -16,6 +16,9 @@ namespace CollectionsAndGenerics
         {
             InitializeComponent();
 
+            CashierWindowQueueForm form2 = new CashierWindowQueueForm();
+            form2.Show();
+
             GetNumberButton.BackColor = ColorTranslator.FromHtml("#3A5A40");
             GetNumberButton.ForeColor = ColorTranslator.FromHtml("#DFE6DA");
 
@@ -29,11 +32,12 @@ namespace CollectionsAndGenerics
         }
 
         private void GetNumberButton_Click(object sender, EventArgs e)
-        { 
-            this.Hide();
-            
-            CashierWindowQueueForm hi = new CashierWindowQueueForm();
-            hi.Show();
+        {
+            CashierClass cashier = new CashierClass();
+
+            QueueNumberLabel.Text = cashier.CashierGeneratedNumber("P - ");
+            CashierClass.getNumberInQueue = QueueNumberLabel.Text;
+            CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
         }
     }
 }
