@@ -63,8 +63,10 @@
             // 
             // QueueList
             // 
+            this.QueueList.Alignment = System.Windows.Forms.ListViewAlignment.Left;
             this.QueueList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QueueList.HideSelection = false;
+            this.QueueList.LabelWrap = false;
             this.QueueList.Location = new System.Drawing.Point(12, 26);
             this.QueueList.Name = "QueueList";
             this.QueueList.Size = new System.Drawing.Size(387, 272);

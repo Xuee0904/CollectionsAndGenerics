@@ -15,6 +15,7 @@ namespace CollectionsAndGenerics
 
         CashierWindowQueueForm form2 = new CashierWindowQueueForm();
         private CashierClass cashier = new CashierClass();
+
         public QueuingForm()
         {
             InitializeComponent();
