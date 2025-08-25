@@ -46,11 +46,11 @@
             // 
             this.ServingQueueLabel.AutoSize = true;
             this.ServingQueueLabel.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServingQueueLabel.Location = new System.Drawing.Point(82, 133);
+            this.ServingQueueLabel.Location = new System.Drawing.Point(73, 129);
             this.ServingQueueLabel.Name = "ServingQueueLabel";
-            this.ServingQueueLabel.Size = new System.Drawing.Size(109, 31);
+            this.ServingQueueLabel.Size = new System.Drawing.Size(123, 31);
             this.ServingQueueLabel.TabIndex = 1;
-            this.ServingQueueLabel.Text = "P - 1000";
+            this.ServingQueueLabel.Text = "P - 10000";
             // 
             // CustomerView
             // 

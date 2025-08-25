@@ -13,9 +13,15 @@ namespace CollectionsAndGenerics
 {
     public partial class CashierWindowQueueForm : Form
     {
+
+        CustomerView form3 = new CustomerView();
+
         public CashierWindowQueueForm()
         {
             InitializeComponent();
+
+            form3.Show();
+
             AutoRefresh();
 
             RefreshButton.BackColor = ColorTranslator.FromHtml("#D9DDDC");
@@ -53,11 +59,16 @@ namespace CollectionsAndGenerics
         private void timer1_Tick(object sender, EventArgs e)
         {
             DisplayCashierQueue(CashierClass.CashierQueue);
+
         }
 
         private void NextButton_Click(object sender, EventArgs e)
         {
             CashierClass.CashierQueue.Dequeue();
+
+            DisplayCashierQueue(CashierClass.CashierQueue);
+
+            form3.ServingQueueLabelText = CashierClass.CashierQueue.Peek();
         }
     }
 }
