@@ -46,10 +46,11 @@
             // 
             // QueueNumberLabel
             // 
-            this.QueueNumberLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.QueueNumberLabel.AutoSize = true;
+            this.QueueNumberLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.QueueNumberLabel.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QueueNumberLabel.Location = new System.Drawing.Point(25, 109);
+            this.QueueNumberLabel.Location = new System.Drawing.Point(25, 108);
             this.QueueNumberLabel.Name = "QueueNumberLabel";
             this.QueueNumberLabel.Size = new System.Drawing.Size(418, 31);
             this.QueueNumberLabel.TabIndex = 1;

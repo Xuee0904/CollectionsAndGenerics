@@ -12,15 +12,17 @@ namespace CollectionsAndGenerics
 {
     public partial class QueuingForm : Form
     {
+        private CashierClass cashier = new CashierClass();
 
         CashierWindowQueueForm form2 = new CashierWindowQueueForm();
-        private CashierClass cashier = new CashierClass();
+        CustomerView form3 = new CustomerView();
 
         public QueuingForm()
         {
             InitializeComponent();
             form2.Show();
-       
+            form3.Show();
+
             GetNumberButton.BackColor = ColorTranslator.FromHtml("#3A5A40");
             GetNumberButton.ForeColor = ColorTranslator.FromHtml("#DFE6DA");
 
@@ -35,7 +37,6 @@ namespace CollectionsAndGenerics
 
         private void GetNumberButton_Click(object sender, EventArgs e)
         {
-
             QueueNumberLabel.Text = cashier.CashierGeneratedNumber("P - ");
             CashierClass.getNumberInQueue = QueueNumberLabel.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
